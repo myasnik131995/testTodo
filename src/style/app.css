@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -33,71 +31,106 @@
   font-family: "Comfortaa", cursive;
   font-size: 40px;
   margin-bottom: 10px;
-  color: #2271b6;
+  color: #0e2438;
+}
+.about ul{
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  color: #0e2438;
+  font-size: 20px;
+  list-style-type: none;
+}
+.about h2 {
+  margin-top: 25px;
 }
 .about p {
   text-align: center;
   font-family: "Comfortaa", cursive;
-  color: #2271b6;
-  font-size: 30px;
+  color: #0e2438;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-.todo_wrapper{
-    text-align: -webkit-center;
+.todo_wrapper {
+  text-align: -webkit-center;
 }
-.todo_btn{
-    margin: 25px 0;
-    width: 150px;
-    height: 50px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: "Comfortaa", cursive;
+.todo_btn {
+  margin: 25px 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Comfortaa", cursive;
 }
-.todo_btn:hover{
-    background: #6eaee6;
+.todo_btn:hover {
+  background: #6eaee6;
 }
-.todo_wrapper h1{
-    font-size: 45px;
-    margin-top: 25px;
-    font-family: "Comfortaa", cursive;
+.todo_wrapper h1 {
+  font-size: 45px;
+  margin: 25px 0;
+  font-family: "Comfortaa", cursive;
 }
-.todo_wrapper input{
-    padding: 5px;
-    font-size: 15px;
-    margin-top: 25px;
-    font-family: "Comfortaa", cursive;
-    border-radius: 5px;
+.todo_wrapper input {
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Comfortaa", cursive;
+  border-radius: 5px;
 }
-.todo_list_container{
-    width: 50%;
-    display: flex;
-    justify-content: center;
+.todo_list_container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-.todo{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    margin-top: 25px;
-    place-items: center;
+.todo {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  margin-top: 5px;
+  place-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 0;
 }
-.todo input{
-    margin: 0 30px;
+.todo input {
+  margin: 0 30px;
 }
-.todo span{
-    font-family: "Comfortaa", cursive;
-    margin: 0 30px;
-    cursor: pointer;
+.todo span {
+  font-family: "Comfortaa", cursive;
+  margin: 0 30px;
+  cursor: pointer;
 }
-.todo p{
-    cursor: pointer;
-    margin: 0;
+.todo p {
+  cursor: pointer;
+  margin: 0;
 }
-.todo_change_btn{
-    padding: 0;
-    border: 1px solid white;
-    cursor: pointer;
+.todo_change_btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
 }
-.todo_change_btn:active{
-    padding: 0;
-    border: 5px solid black;
+.todo_change_btn:hover {
+  background: rgb(173, 155, 155);
+}
+.todo_change_btn:active {
+  padding: 0;
+  border: 5px solid black;
+}
+
+.todo.completed span {
+  text-decoration: line-through;
+}
+
+.btn_pages {
+  padding: 5px;
+  margin-left: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.btn_pages__current {
+  border: 3px solid orange;
+  font-weight: bold;
 }

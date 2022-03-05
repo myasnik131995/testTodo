@@ -14,6 +14,7 @@ function App() {
     <Routes>
       <Route path="/about" element={<About/>}/>
       <Route path="/todo" element={<Todo/>}/>
+      <Route path="*" element={<About/>}/>
     </Routes>
     </BrowserRouter>
   );
